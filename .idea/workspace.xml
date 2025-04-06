@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ea742cf-d94c-4856-b08c-97d4a4746439" name="Changes" comment="Second Chapter Notes and Examples">
-      <change afterPath="$PROJECT_DIR$/src/main/java/clrs/Part_1_Foundations/chapter_02/merge_sort.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="4ea742cf-d94c-4856-b08c-97d4a4746439" name="Changes" comment="Second Chapter Exercises">
+      <change afterPath="$PROJECT_DIR$/src/main/java/clrs/Part_1_Foundations/chapter_02/HybridMergeSort/HybridMergeSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/clrs/Part_1_Foundations/chapter_02/HybridMergeSort/SortBenchmark.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/clrs/Part_1_Foundations/chapter_02/problems.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/clrs/Part_1_Foundations/chapter_02/excercise.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/clrs/Part_1_Foundations/chapter_02/excercise.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/clrs/Part_1_Foundations/chapter_02/notes.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/clrs/Part_1_Foundations/chapter_02/notes.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/clrs/Part_1_Foundations/chapter_02/selection_sort.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/clrs/Part_1_Foundations/chapter_02/selection_sort.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +22,13 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -31,12 +38,12 @@
     &quot;assignee&quot;: &quot;kevintorch&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/kevintorch/CLRS.git",
-    "accountId": "9a84951d-4ed6-47ea-8f71-9b7c63fb405b"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/kevintorch/CLRS.git&quot;,
+    &quot;accountId&quot;: &quot;9a84951d-4ed6-47ea-8f71-9b7c63fb405b&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -48,6 +55,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Gradle.CLRS [:clrs.Part_1_Foundations.chapter_02.SortBenchmark.main()].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
@@ -57,6 +65,26 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="SortBenchmark" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="clrs.Part_1_Foundations.chapter_02.HybridMergeSort.SortBenchmark" />
+      <module name="CLRS.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="clrs.Part_1_Foundations.chapter_02.HybridMergeSort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SortBenchmark" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -90,7 +118,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743263899986</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Second Chapter Exercises">
+      <option name="closed" value="true" />
+      <created>1743353856375</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1743353856375</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -107,6 +143,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
     <MESSAGE value="Second Chapter Notes and Examples" />
-    <option name="LAST_COMMIT_MESSAGE" value="Second Chapter Notes and Examples" />
+    <MESSAGE value="Second Chapter Exercises" />
+    <option name="LAST_COMMIT_MESSAGE" value="Second Chapter Exercises" />
   </component>
 </project>

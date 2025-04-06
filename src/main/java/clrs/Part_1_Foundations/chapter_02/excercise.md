@@ -123,7 +123,7 @@ RECURSIVE-BINARY-SEARCH(A, v, left, right)
     
   if v > A[mid]
     return BINARY_SEARCH(A, v, mid + 1, right)
-    else BINARY_SEARCH(A, v, left, mid - 1)
+  else BINARY_SEARCH(A, v, left, mid - 1)
 ```
 
 #### Recurrence Relation
@@ -146,3 +146,4 @@ FIND(S, x)
           return True
    return False
 ```
+
