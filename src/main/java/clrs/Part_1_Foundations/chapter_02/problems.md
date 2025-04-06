@@ -139,10 +139,12 @@ BUBBLE_SORT(A)
 ```
 
 1. Let A' denote the output of BUBBLE_SORT(A). To prove that BUBBLE_SORT is
-correct, we need to prove that it terminates and that  
+correct, we need to prove that it terminates and that
+
 $$
 A'[1] \le A'[2] \le \cdots \le A'[n],  \quad\quad\quad(2.3)
 $$
+
 where $n = A.length$. In order to show that BUBBLE_SORT actually sorts, what else do we need to prove?  
 The next two parts will prove inequality (2.3).
 2. State precisely a loop invariant for the **for** loop in lines 2–4, and prove that this
