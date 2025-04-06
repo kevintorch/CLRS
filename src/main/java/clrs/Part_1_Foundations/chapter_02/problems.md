@@ -36,7 +36,10 @@ Now we have $`n / k`$ sorted sub-lists of size $k$. total number of elements is 
 We know merge sort takes $\Theta(n \log m)$ to merge `m` sorted sub-lists with `n` total elements.
 
 so merging takes:
-$$ \Theta(n \log (n / k)) $$
+
+$$ 
+\Theta(n \log (n / k)) 
+$$
 
 #### 3. Largest value of `k` as a function of `n`:
 
@@ -63,6 +66,7 @@ k - \log k = 0 \implies k &= \log k
 $$
 
 So
+
 $$
 k = \log k
 $$
