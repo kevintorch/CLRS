@@ -11,12 +11,10 @@ which $n/k$ sub-lists of length $k$ are sorted using insertion sort and then mer
 using the standard merging mechanism, where $k$ is a value to be determined.
 
 a. Show that insertion sort can sort the $n / k$ sub-lists, each of length $k$, in $\Theta(nk)$
-   worst-case time.    
+worst-case time.    
 b. Show how to merge the sublists in $\Theta(n \log (n/k))$ worst-case time.    
 c. Given that the modified algorithm runs in $\Theta(nk + n \log (n/k))$ worst-case time,
-   what is the largest value of $k$ as a function of $n$ for which the modified algorithm 
-   has the same running time as standard merge sort, in terms of $\Theta$-notation?    
+what is the largest value of $k$ as a function of $n$ for which the modified algorithm 
+has the same running time as standard merge sort, in terms of $\Theta$-notation?    
 d. How should we choose $k$ in practice?  
-
-
 

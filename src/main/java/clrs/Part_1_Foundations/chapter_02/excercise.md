@@ -90,7 +90,7 @@ sequence **A** is sorted, we can check the midpoint of the sequence against `v` 
 eliminate half of the sequence from further consideration. The **binary search** algorithm repeats this procedure, 
 halving the size of the remaining portion of the sequence each time. 
 Write pseudocode, either iterative or recursive, for binary search. 
-Argue that the worst-case running time of binary search is: $$ \theta (\text{log } n) $$
+Argue that the worst-case running time of binary search is: $ \Theta (\text{log } n)$.
 
 #### Iterative Binary Search
 
@@ -132,9 +132,9 @@ $$ T(n) = T(n / 2) + \theta(1) $$
 
 ### 2.3-7
 
-Describe a O(n lg n)-time algorithm that, given a set S of n integers and another
-integer x, determines whether or not there exist two elements in S whose sum is
-exactly x.
+Describe a $O(n \log n)$-time algorithm that, given a set `S` of `n` integers and another
+integer `x`, determines whether or not there exist two elements in `S` whose sum is
+exactly `x`.
 
 ```
 FIND(S, x)
