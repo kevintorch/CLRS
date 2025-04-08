@@ -110,7 +110,7 @@ make a big difference.
 **Answer:** Choose `k` experimentally based on your machine, dataset, and compiler. 
 Often `k = 16` or `k = 32` is a good starting point.
 
-#### Hybrid Merge-Insertion Sort
+###### Hybrid Merge-Insertion Sort
 Pseudocode:
 - `A` is the Array
 - `p` is the starting index.
@@ -165,9 +165,56 @@ The output is a permutation of the input
 So the missing piece is to prove that `A'` is a permutation of the original array `A`.
 
 #### 2. Loop Invariant for inner loop
+let `n` is `A.length`
+>   At the start of each iteration of the inner `for` loop (indexed by `i`), 
+>   the sub-array `A[i..n]` is a permutation of the original elements in that range,
+>   and the smallest element in `A[i..n]` is at position `A[i]`.
 
->    At the start of each iteration of the inner for loop (indexed by i), the sub-array `A[i..n]` contains the 
->    largest element of `A[j..n]`, and the elements in `A[i..n]` are a permutation of the elements
->    originally in `A[j..n]`.
+#### 💡Intuition:
 
+Each Pass "Bubble up" smallest element to the left part of the array.
+
+###### Proof of loop Invariant:
+
+**Initialization:**
+Prior to the iteration `i = A.length` (`i = n`), 
+the sub-array `A[n..n]` contains only one element, 
+which is trivially the smallest in that sub-array and a permutation of itself.
+
+**Maintenance**
+After the comparison and possibly swap, i becomes i - 1. Loop invariant still holds:
+the sub-array `A[i..n]` contains the smallest element in `A[i..n]` at `A[i]`, and is a permutation of the original elements in that range.
+
+**Termination**
+After the loop terminates, `i = j`. The smallest element in `A[j..n]` is now at `A[i]` or `A[j]` and 
+the elements in A[j..n] or A[i..n] are a permutation of the original elements in that range.
+
+
+#### 3. Loop Invariant for outer loop
+
+let `n` is `A.length`
+
+>  At the start of each iteration of the outer `for` loop (indexed by j), 
+>  the sub-array A[1..j-1] contains the smallest `j-1` sorted elements of A[1..n], 
+>  and the sub-array A[j..n] contains the remaining unsorted elements of A[1..n].
+
+
+**Initialization:**
+Prior to the iteration when `j = 1`, the sub-array is `A[1..0]`, which is an empty array,
+and also trivially sorted and sub-array A[1..n] is unsorted.
+
+**Maintenance**
+After the completion of inner for loop. smallest element moved to `j` and `j` then increased to `j+1` making our loop invariant holds again
+which includes smallest sorted elements at `A[1..j-1]` and unsorted elements at `A[j+1..n]`
+
+**Termination**
+After the loop terminates, `j = n+1`. smallest elements is present at  A[i..j-1]
+
+#### 4. Worst-case running time
+
+for worse-case when elements are in revered-order. bubble sort takes 
+$ O (n^2) $ time. If we compare this to insertion sort. insertion sort also takes $ O (n^2) $.
+
+however, for best-case when elements are sorted.
+Insertion sort takes $ O (n) $ time and bubble sort still takes $ O (n^2) $ time unless we optimize it.  
 
